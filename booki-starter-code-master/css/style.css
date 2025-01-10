@@ -19,9 +19,21 @@ header img {
     width: 6em;
 }
 
-nav a:hover {
+.header-line {
+    font-size: 1.5em;
+}
+
+.header-lien:hover {
     color: var(--main-color);
     border-top: #0065FC solid 2px;
+}
+
+.head-container {
+    padding-top: 10px;
+}
+
+.head-container-2 {
+    padding-top: 1px;
 }
 
 nav {
@@ -35,10 +47,12 @@ nav img {
     margin-bottom: 80px;
 }
 
+nav div {
+    display: flex;
+}
+
 nav a {
     margin-left: 60px;
-    margin-top: 50px;
-    padding-top: 7px;
 }
 
 .fa-solid {
@@ -84,10 +98,29 @@ input::placeholder {
     margin-bottom: 50px;
 }
 
+.main-text h1 {
+    font-size: 2em;
+}
+
+.main-text p {
+    font-size: 1.2em;
+}
+
+.form-height {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 30px;
+}
+
+.form-height i {
+    height: 3.2em;
+}
+
 .rechercher {
     background-color: var(--main-color);
     color: white;
     width: 8em;
+    height: 3.2em;
     font-size: 1.2em;
     font-weight: bold;
     border-radius: 0px 20px 20px 0px;
@@ -96,15 +129,62 @@ input::placeholder {
 
 main #ville {
     border: 2px solid var(--main-bg-color);
-    width: 14em;
+    width: 16em;
+    height: 110%;
 }
 
 .pointeur {
     display: flex;
-    background-color: lightgray;
+    background-color: lightgrey;
     border-radius: 20px 0px 0px 20px;
     width: 2.5em;
 }
+
+
+.filter-cards {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    width: 65%;
+}
+
+.filter-cards div {
+    font-weight: bolder;
+}
+
+.filter-cards h2 {
+    padding-left: 0px;
+    padding-right: 20px;
+    font-size: 1.2em;
+}
+
+.filter-card {
+    padding: 20px 30px 20px 30px;
+    border: 2px lightgrey solid;
+    border-radius: 50px;
+    font-size: 1.2em;
+}
+
+.filter-card:hover {
+    background-color: var(--filter-bg-color);
+}
+
+
+.info-ville {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 28em;
+    margin-bottom: 30px;
+}
+
+.info-ville i {
+    font-size: 1.5em;
+}
+
 
 .section-title {
     margin: 0;
@@ -199,6 +279,27 @@ main #ville {
 
 
 
+/* Le code pour déterminer le pied de page */
+
+.bg-color {
+    background-color: var(--main-bg-color);
+    margin: 30px 50px 0px 50px;
+}
+
+.containerfoot {
+    display: flex;
+    flex-direction: row;
+}
+
+.espace-foot {
+    margin-right: 200px;
+    margin-left: 20px;
+}
+
+
+.titlefoot {
+    font-size: large;
+}
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
 

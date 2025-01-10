@@ -19,24 +19,61 @@
     <div class="main-container">
         <header>
             <nav>
-                    <img src="images/logo/Booki.png" alt="Logo de Booki">
-                    <div>
-                        <a href="index.html">Hébergements</a>
-                        <a href="#">Activités</a>
-                    </div>
+                <a href="index.html"><img src="images/logo/Booki.png" alt="Logo de Booki"></a>
+                <div>
+                    <a href="index.html" class="header-lien"><p class="head-container">Hébergements</p></a>
+                    <a href="#" class="header-lien head-container"><p class="head-container-2">Activités</p></a>
+                </div>
             </nav>
         </header>
         <main>
-            <div class="main-text">
-                <h1>Trouvez votre hebergement pour des vacances de rêve</h1>
-                <p>En plein centre-ville ou en pleine nature</p>
-            </div>
-            <div>
-                <form method="get" action="#">
-                    <i class="fa-solid fa-location-dot pointeur" style="color: black;"></i>
-                    <input type="text" name="ville" id="ville" placeholder="Marseille, France" maxlength="20">
-                    <input type="submit" value="Rechercher" class="rechercher">
-            </div>
+            <section>
+                <div class="main-text">
+                    <h1>Trouvez votre hebergement pour des vacances de rêve</h1>
+                    <p>En plein centre-ville ou en pleine nature</p>
+                </div>
+            </section>
+            <section>
+                <div class="form-height">
+                    <form method="get" action="#">
+                        <i class="fa-solid fa-location-dot pointeur" style="color: black;"></i>
+                        <input type="text" name="ville" id="ville" placeholder="Marseille, France" maxlength="20">
+                        <input type="submit" value="Rechercher" class="rechercher">
+                </div>
+            </section>
+            <section>
+                <div class="filter-cards">
+                        <div>
+                            <h2 class="section-title">Filtres</h2>
+                        </div>
+                        <div class="filter-card">
+                            <i class="fa-solid fa-money-bill-wave" aria-hidden="true"></i>
+                            <a href="#"> Économique</a>
+                        </div>
+                        <div class="filter-card">
+                            <i class="fa-solid fa-child-reaching" aria-hidden="true"></i>
+                            <a href="#"> Familial</a>
+                        </div>
+                        <div class="filter-card">
+                            <i class="fa-solid fa-heart" aria-hidden="true"></i>
+                            <a href="#"> Romantique</a>
+                        </div>
+                        <div class="filter-card">
+                            <i class="fa-solid fa-fire" aria-hidden="true"></i>
+                            <a href="#">Nos pépites</a>
+                        </div>
+                </div>
+            </section>
+
+            <section class="info-ville">
+                <div>
+                    <i class="fa-solid fa-circle-info"></i>
+                </div>
+                <div>
+                    <p>Plus de 500 logements sont disponibles dans cette ville</p>
+                </div>
+            </section>
+
             <div class="hebergements-and-populaires">
                 <section class="hebergements">
 
@@ -53,7 +90,7 @@
                                 <div class="card-content">
                                     <div class="card-txt">
                                         <h3 class="card-title">Hôtel Le soleil du matin</h3>
-                                        <p class="card-subtitle">Nuit à partir de 128<span class="euro">€</span></p>
+                                        <p class="card-subtitle">Nuit à partir de 25<span class="euro">€</span></p>
                                     </div>
                                     <div class="card-rating">
                                         <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
@@ -108,7 +145,38 @@
                 </section>
             </div>
         </main>
-        <footer></footer>
+        <footer>
+            <div class="bg-color containerfoot">
+                <div class="espace-foot">
+                    <div class="titlefoot">
+                        <p><strong>À propos</strong></p>
+                    </div>
+                    <div>
+                        <p>Fonctionnement du site</p>
+                        <p>Conditions générales</p>
+                        <p>Données et confidentialité</p>
+                    </div>
+                </div>
+                <div class="espace-foot">
+                    <div class="titlefoot">
+                        <p><strong>Nos hébergements</strong></p>
+                    </div>
+                    <div>
+                        <p>Charte qualité</p>
+                        <p>Proposer votre hôtel</p>
+                    </div>
+                </div>
+                <div class="espace-foot">
+                    <div class="titlefoot">
+                        <p><strong>Assistance</strong></p>
+                    </div>
+                    <div>
+                        <p>Centre d'aide</p>
+                        <p>Nous contacter</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </div>
 </body>
 
