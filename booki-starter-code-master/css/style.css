@@ -17,10 +17,8 @@ a {
 header img {
     height: 2rem;
     width: 6rem;
-}
-
-.header-line {
-    font-size: 1.5em;
+    margin-top: 50px;
+    margin-bottom: 80px;
 }
 
 .header-lien:hover {
@@ -32,11 +30,6 @@ nav {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-}
-
-nav img {
-    margin-top: 50px;
-    margin-bottom: 80px;
 }
 
 nav div {
@@ -510,8 +503,68 @@ main #ville {
 .element {
     font-size: 0.75em;
 }
+}
 
 /* Small devices (phones, less than 768px) */
-@media (max-width: 767.98px) {
-    /* ... */
+@media (max-width: 768px) {
+
+    /* Le code pour le header */
+
+    nav {
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        grid-template-rows: repeat(2, 50%);
+        height: 130px;
+    }
+
+    nav div {
+        justify-content: space-around;
+        text-align: center;
+        grid-column: span 2;
+        height: 100%;
+    }
+
+    nav div a {
+        margin: 0px;
+        width: 50%;
+        height: 50px;
+    }
+
+    nav div p {
+        margin-bottom: 0px;
+    }
+
+    .header-lien {
+        border-bottom: #F2F2F2 solid 2px;
+    }
+
+    .header-lien:hover {
+        color: var(--main-color);
+        border-top: none;
+        border-bottom: #0065FC solid 2px;
+    }
+
+    header img {
+        margin: 20px 0px 0px 0px;
+        height: 1.5rem;
+        width: 5rem;
+    }
+
+    .head-logo {
+        grid-column: span 2;
+        justify-self: center;
+    }
+
+    .head-lien {
+        justify-content: center;
+    }
+
+    header {
+        width: 100%;
+        height: auto;
+    }
+
+    .main-container {
+        padding: 0px;
+    }
 }
