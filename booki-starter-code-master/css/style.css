@@ -14,32 +14,6 @@ a {
     text-decoration: none;
 }
 
-header img {
-    height: 2rem;
-    width: 6rem;
-    margin-top: 50px;
-    margin-bottom: 80px;
-}
-
-.header-lien:hover {
-    color: var(--main-color);
-    border-top: #0065FC solid 2px;
-}
-
-nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-nav div {
-    display: flex;
-}
-
-nav div a {
-    margin-left: 60px;
-}
-
 .fa-solid {
     color: var(--main-color);
 }
@@ -50,19 +24,8 @@ body {
     margin: 0px;
 }
 
-main form{
-    display: flex;
-    justify-content: start;
-    margin-bottom: 50px;
-    height: 50px;
-    width: 1000px;
-}
-
-main form i{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.2em;
+main {
+    padding: 0px 50px;
 }
 
 input::placeholder {
@@ -74,54 +37,108 @@ input::placeholder {
 
 .main-container {
     width: 100%;
-    max-width: 1440px;
+    max-width: 1540px;
     padding: 0 50px;
     box-sizing: border-box;
 }
 
-.main-text {
+
+/* Le code pour le header */
+
+header img {
+    height: 19px;
+    width: 61.1px;
     margin-top: 30px;
-    margin-bottom: 50px;
+    margin-left: 50px;
+}
+
+.header-lien:hover {
+    color: var(--main-color);
+    border-top: #0065FC solid 2px;
+}
+
+header {
+    background-color: grey;
+    padding-bottom: 30px;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-height: 49px;
+}
+
+nav div {
+    display: flex;
+}
+
+nav div a {
+    margin-left: 60px;
+}
+
+/* Pour styliser la premiere partie */
+
+.info-group {
+    background-color: lightyellow;
+    margin: 30px 0px;
+    height: auto;
+}
+
+.main-text {
+    margin-bottom: 35px;
     font-size: calc(7rem+1vw);
 }
 
 .main-text h1 {
-    font-size: 2em;
+    font-size: 1.4rem;
+    margin-bottom: 8px;
+    margin-top: 0px;
 }
 
 .main-text p {
-    font-size: 1.2em;
+    font-size: 1em;
+    margin: 0;
 }
 
 /* Le code pour styliser le formulaire */
 
-.form-height {
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 30px;
-}
-
-.form-height p {
-    margin: 0  ;
-    height: 61px;
+main form p {
+    margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.form-height i {
-    height: 61px;
+main form{
+    display: flex;
+    margin-bottom: 35px;
+    height: 49px;
+    width: 377px;
+}
+
+main #ville::placeholder {
+    font-size: 1.1rem;
+}
+
+main form i{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    width: 13.5%;
 }
 
 .rechercher {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: var(--main-color);
     color: white;
-    width: 8em;
-    height: 59px;
-    font-size: 1.2em;
+    width: 35.5%;
+    font-size: 1.1rem;
     font-weight: bold;
     border-radius: 0px 20px 20px 0px;
-    border: 1px solid var(--main-color);
 }
 
 .loupe {
@@ -130,15 +147,13 @@ input::placeholder {
 
 main #ville {
     border: 2px solid var(--main-bg-color);
-    width: 16em;
-    height: 110%;
+    width: 51%;
 }
 
 .pointeur {
     display: flex;
-    background-color: lightgrey;
+    background-color: var(--main-bg-color);
     border-radius: 20px 0px 0px 20px;
-    width: 2.5em;
 }
 
 /* Le code pour styliser les filtres */
@@ -146,50 +161,63 @@ main #ville {
 .filter-cards {
     display: flex;
     flex-direction: row;
+    justify-content: flex-start;
     align-items: center;
-    justify-content: space-between;
-    margin-bottom: 50px;
-    width: 65%;
+    width: 758px;
+    height: 50px;
+    margin-bottom: 35px;
 }
 
-.filter-cards div {
+.filter-cards .filter-card {
     font-weight: bolder;
-    width: 70%;
+}
+
+.filter-cards p {
+    font-weight: bolder;
+    margin: 0px
+}
+
+.filter-cards #filter {
+    margin: 14.5px 15px 14.5px 0px;
+    font-size: 1.127rem;
 }
 
 .filter-card {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px 5% 20px 5%;
     border: 2px lightgrey solid;
     border-radius: 50px;
-    font-size: 1rem;
+    font-size: 1.073rem;
+    margin: 0px 7.5px;
+    height: 100%;
+}
+
+.fc1 {
+    margin-left: 0px;
+}
+
+.fc4 {
+    margin-right: 0px;
 }
 
 .filter-card:hover {
     background-color: var(--filter-bg-color);
 }
 
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(9,1fr);
-    align-items: start;
-    justify-content: center;
-    align-items: center;
-}
-
-.filtre {
-    width: 80px;
-    height: 26px;
-    grid-column: span 1;
-}
-
-.element {
-    grid-column: span 2;
+.filter-card a {
     display: flex;
+    flex-direction: row;
     align-items: center;
-    justify-self: center;
+    justify-content: center;
+    padding: 15px 19px;
+}
+
+.filter-card i {
+    margin-right: 10px;
+}
+
+.filter-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: stretch;
 }
 
 /* Le code pour styliser les infos de Marseille */
@@ -198,13 +226,17 @@ main #ville {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
-    width: 28em;
-    margin-bottom: 30px;
+    width: 100%;
+    max-height: 24px;
 }
 
 .info-ville i {
     font-size: 1.5em;
+    margin-right: 10px;
+}
+
+.info-ville p {
+    margin: 0;
 }
 
 
@@ -256,6 +288,7 @@ main #ville {
     width: 65%;
     display: flex;
     flex-direction: column;
+    margin-right: 40px;
 }
 
 .hebergements h1 {
@@ -281,7 +314,7 @@ main #ville {
 .hebergement-cards {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .hebergement-cards .card {
@@ -428,8 +461,58 @@ main #ville {
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
+
+/* Desktop normal >=1440px */
+@media (max-width: 1440px) {
+    .main-container {
+        padding: 0px;
+    }
+
+    nav div {
+        display: flex;
+        justify-content: space-between;
+        width: 344px;
+        max-height: 35px;   
+    }
+
+    nav div #activites {
+        margin: 0px 50px 0px 34px;
+    }
+
+    nav div #hebergements {
+        margin: 0px 34px 0px 50px;
+    }
+
+    .hebergements-and-populaires {
+        max-height: 614px;
+    }
+
+    .hebergements h1 {
+        font-size: 1.4rem;
+    }
+
+    .card-title{
+        font-size: 16px;
+    }
+
+    .hebergements .card {
+        max-height: 207.25px;
+        max-width: 250.33px;
+    }
+
+    .hebergements-cards img {
+        max-height: 124px;
+        max-height: 250px;
+    }
+}
+
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
+    main {
+        padding: 0;
+    }
+
+
     .hebergements-and-populaires {
         flex-direction: column;
     }
@@ -480,20 +563,30 @@ main #ville {
         width: 80%;
     }
 
-    .grid-container {
-        display: grid;
-        grid-template-columns: repeat(4,1fr);
-        justify-content: center;
-        align-items: center;
-        row-gap: 30px;
+    .filter-cards {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        height: 91px;
+        width: 82.9%;
     }
 
-    .filtre {
-        grid-column: span 4;
+    .filter-cards .filter-title {
+        height: 45%;
+        margin-left: 7.5px;
+    }
+    .filter-title #filter {
+        margin-bottom: 20px;
+        margin-top: 0px;
+        margin-right: 0px;
     }
 
-    .element {
-        grid-column: span 1;
+    .filter-card {
+        font-size: 1rem;
+    }
+
+    .filter-group {
+        height: 55%;
     }
 }
 
