@@ -58,7 +58,6 @@ header img {
 }
 
 header {
-    background-color: grey;
     padding-bottom: 30px;
 }
 
@@ -80,7 +79,6 @@ nav div a {
 /* Pour styliser la premiere partie */
 
 .info-group {
-    background-color: lightyellow;
     margin: 30px 0px;
     height: auto;
 }
@@ -274,6 +272,8 @@ main #ville {
 .hebergements-and-populaires {
     display: flex;
     justify-content: space-between;
+    height: 100%;
+    max-height: 614px;
 }
 
 .hebergements-and-populaires section {
@@ -292,20 +292,24 @@ main #ville {
 }
 
 .hebergements h1 {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+    font-size: 1.4rem;
     margin-top: 0px;
     margin-bottom: 0px;
 }
 
-.hebergements-pad {
-    padding-top: 20px;
+.hebergements h3 {
+    margin: 0px 0px 8px 0px;
+}
+
+.hebergements p {
+    font-size: 0.85rem;
 }
 
 .hebergements img {
     width: 100%;
-    height: 50%;
+    height: 100%;
+    max-width: 245.33px;
+    max-height: 124px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     aspect-ratio: 4/2;
@@ -315,27 +319,47 @@ main #ville {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin-top: 30px;
+    height: 100%;
+    max-height: 207.25px;
 }
 
 .hebergement-cards .card {
     display: flex;
     flex-direction: column;
-    margin-top: 33px;
+    max-width: 245.33px;
+    width: 100%;
+    height: 100%;
+    max-height: 207.25px;
 }
 
 .hebergement-cards a {
     width: 30%;
-    height: 40%;
+    height: 100%;
 }
 
 .hebergement-cards .card-content {
-    /* height: 50%; */
     box-sizing: border-box;
-    padding-left: 10px;
+    padding-left: 15px;
     height: 50%;
     width: 100%;
+    margin-top: 4px;
+    margin-bottom: 10px;
 }
 
+.card-content p {
+    margin: 8px 0px;
+}
+
+.hebergements-pad {
+    margin-top: 30px;
+    margin-bottom: 0px;
+}
+
+.hebergements-pad h3 {
+    margin: 0px;
+    font-size: 1.15rem;
+}
 
 /****** Populaires ***********/
 .populaires {
@@ -388,25 +412,33 @@ main #ville {
 .activites {
     display: flex;
     flex-direction: column;
-    padding-left: 50px;
-    padding-right: 50px;
-    width: 90%;
-    margin-top: 40px;
-    margin-bottom: 40px;
+    width: 100%;
+    margin: 35px 0px;
+    height: 100%;
+    max-height: 559px;
+}
+
+.activites h1 {
+    margin: 30px 0px;
+    padding: 0px 30px;
+    font-size: 1.6rem;
 }
 
 .activites-cards .card {
     display: flex;
     flex-direction: column;
     padding: 0px;
-    margin-left: 10px;
-    margin-right: 10px;
+    width: 100%;
+    max-width: 297.5px;
     height: 100%;
+    max-height: 439px;
 }
 
 .activites-cards img {
     width: 100%;
-    height: 80%;
+    height: 100%;
+    max-width: 297.5px;
+    max-height: 380px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     aspect-ratio: 2/3;
@@ -416,46 +448,42 @@ main #ville {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    padding: 0px 30px;
 }
 
 .activites-cards a {
-    width: 24%;
+    width: 100%;
+    max-width: 297.5px;
     height: 100%;
-}
-
-.activites-cards .card-content {
-    font-size: clamp(0.3rem,calc(1rem+0.5vw),5rem);
-    margin: 4% 9% 4% 9%;
-    height: 20%;
+    max-height: 439px;
 }
 
 .activites-cards h3 {
     margin: 0;
+    padding: 20px 19px;
     display: flex;
     align-items: center;
-    height: 30px;
+    font-size: 1rem;
 }
 
 /* Le code pour déterminer le pied de page */
 
-.bg-color {
+footer {
+    max-height: 163px;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
     background-color: var(--main-bg-color);
-    margin: 30px 50px 0px 50px;
+    padding: 20px 0px 20px 20px;
+    gap: 15px;
 }
 
-.containerfoot {
-    display: flex;
-    flex-direction: row;
-}
-
-.espace-foot {
-    margin-right: 20%;
-    margin-left: 20px;
-}
-
-
-.titlefoot {
-    font-size: large;
+.footer-title {
+    font-size: 18px;
+    font-weight: bold;
 }
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
@@ -483,42 +511,152 @@ main #ville {
         margin: 0px 34px 0px 50px;
     }
 
+    /* Hebergement 1440px */
     .hebergements-and-populaires {
-        max-height: 614px;
+        height: 614px;
+    }
+
+    .card-rating {
+        display: flex;
+        align-items: center;
+        height: 13.5px;
+    }
+
+    .hebergement-cards {
+        display: flex;
+        justify-content: flex-start;
+        gap: 2.5%;
+    }
+
+    .hc2 {
+        margin-top: 30px;
     }
 
     .hebergements h1 {
         font-size: 1.4rem;
     }
 
-    .card-title{
-        font-size: 16px;
+    .hebergement-cards .card-content {
+        margin-top: 8px;
+        margin-bottom: 0px;
+        padding-bottom: 10px;
     }
 
-    .hebergements .card {
+    .card-content p{
+        font-size: 0.85rem;
+    }
+
+    .hebergements a, .hebergements .card {
         max-height: 207.25px;
         max-width: 250.33px;
+        width: 105%;
+        margin: 0px;
+        box-sizing: border-box;
+        flex-shrink: 1;
     }
 
     .hebergements-cards img {
         max-height: 124px;
         max-height: 250px;
     }
+
+    .hebergements .card-content h3 {
+        margin: 0px
+    }
+
+    .hebergements-pad {
+        margin-top: 30px;
+        margin-bottom: 2.5px;
+    }
+
+    /* Activites 1440px */
+    .activites {
+        width: 100%;
+        padding: 0px;
+        height: 559px;
+        margin: 35px 0px;
+    }
+
+    .activites h1 {
+        font-size: 1.6rem;
+        margin: 30px 0px;
+    }
+
+    .activites .card-content h3 {
+        font-size: 16px;
+        padding: 0px
+    }
+
+    .activites .activites-cards {
+        padding: 0px 30px;
+        height: 100%;
+        max-height: 439px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .activites-cards .card {
+        height: 100%;
+        max-height: 459px;
+        width: 100%;
+        max-width: 297.5px;
+    }
+
+    .activites-cards .card-content {
+        display: flex;
+        align-items: center;
+        height: 59px;
+        margin: 20px 19px;
+        padding: 0px;
+    }
+
+    .activites-cards img {
+        height: 380px;
+    }
+
+    /* footer 1440px */
+    .containerfoot {
+        margin-top: 0px;
+    }
+
+    footer {
+        height: 100%;
+        max-height: 163px;
+        margin: 0px 50px;
+    }
 }
 
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
     main {
-        padding: 0;
+        padding: 0px 50px;
     }
 
 
     .hebergements-and-populaires {
         flex-direction: column;
+        height: 100%;
+        max-height: 913.5px;
     }
 
     .hebergements {
         width: 100%;
+        max-height: 611.5px;
+        margin: 0px;
+    }
+
+    .hebergement-cards a, .hebergements .card {
+        max-width: 268px;
+        width: 100%;
+        box-sizing: border-box;
+        flex-shrink: 1;
+    }
+
+    .hebergement-cards img {
+        width: 100%;
+        max-width: 268px;
+        height: 100%;
+        max-height: 124px;
     }
 
     .populaires {
@@ -530,6 +668,13 @@ main #ville {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        height: 100%;
+        max-height: 146px;
+        margin-top: 20px;
+    }
+
+    .populaires-cards .card {
+        margin: 0px;
     }
 
     .populaires-cards a {
@@ -544,15 +689,39 @@ main #ville {
         font-size: 13px;
     }
 
+    .activites, .activites section {
+        height: 100%;
+        max-height: 390px;
+    }
+
+    .activites-cards {
+        height: 100%;
+        max-height: 270px;
+        box-sizing: border-box;
+
+    }
+
+    .activites-cards .card, .activites-cards a {
+        width: 100%;
+        max-width: 193.5px;
+        height: 100%;
+        max-height: 270px;
+    }
+
     .activites-cards img {
         aspect-ratio: 9/10;
+        height: 100%;
+        max-height: 200px;
+    }
+
+    .activites-cards .card-content {
+        height: 19px;
     }
 
     .activites-cards h3 {
         font-size: 0.9rem;
         display: flex;
         align-items: center;
-        height: 30px;
     }
 
     .espace-foot {

@@ -1,0 +1,5 @@
+Unités pour dimensions (div etc...) :
+px
+%
+vh (pour height) = en fonction de la hauteur de l'écran
+vw (pour width) = en fonction de la largeur de l'écran
