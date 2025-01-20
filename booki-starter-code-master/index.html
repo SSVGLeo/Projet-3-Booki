@@ -19,10 +19,16 @@
     <div class="main-container">
         <header>
             <nav>
-                <a href="index.html" class="head-logo"><img src="images/logo/Booki.png" alt="Logo de Booki"></a>
-                <div>
-                    <a href="#hebergements" class="header-lien" id="hebergements"><p>Hébergements</p></a>
-                    <a href="#activites" class="header-lien" id="activites"><p>Activités</p></a>
+                <div class="header-logo">
+                    <a href="index.html" class="head-logo"><img src="images/logo/Booki.png" alt="Logo de Booki"></a>
+                </div>
+                <div class="header-ha">
+                    <div>
+                        <a href="#hebergements" class="header-lien" id="hebergements"><p>Hébergements</p></a>
+                    </div>
+                    <div>
+                        <a href="#activites" class="header-lien" id="activites"><p>Activités</p></a>
+                    </div>
                 </div>
             </nav>
         </header>
@@ -35,7 +41,7 @@
                     </div>
                 </section>
                 <section>
-                    <div>
+                    <div class="formulaire">
                         <form method="get" action="#">
                             <i class="fa-solid fa-location-dot pointeur" style="color: black;"></i>
                             <input type="text" name="ville" id="ville" placeholder="Marseille, France" maxlength="20">
@@ -56,13 +62,13 @@
                                     <p>Économique</p>
                                 </a>
                             </div>
-                            <div class="filter-card">
+                            <div class="filter-card fc2">
                                 <a href="#">
                                     <i class="fa-solid fa-child-reaching" aria-hidden="true"></i>
                                     <p>Familial</p>
                                 </a>
                             </div>
-                            <div class="filter-card">
+                            <div class="filter-card fc3">
                                 <a href="#">
                                     <i class="fa-solid fa-heart" aria-hidden="true"></i>
                                     <p>Romantique</p>
@@ -322,22 +328,24 @@
         </main>
         <footer>
             <div class="footer-grid">
-                <!-- Titre du grid -->
-                <div class="footer-title">À propos</div>
-                <div class="footer-title">Nos hébergements</div>
-                <div class="footer-title">Assistance</div>
-                <!-- 1er ligne -->
-                 <div>Fonctionnement du site</div>
-                 <div>Charte qualité</div>
-                 <div>Centre d'aide</div>
-                 <!-- 2eme ligne -->
-                  <div>Conditions générales</div>
-                  <div>Proposer votre hôtel</div>
-                  <div>Nous contacter</div>
-                  <!-- 3eme ligne -->
-                   <div>Données et confidentialité</div>
-                   <div></div>
-                   <div></div>
+                <div class="footer-group">
+                    <div class="footer-title">À propos</div>
+                    <div class="footer-item">Fonctionnement du site</div>
+                    <div class="footer-item">Conditions générales</div>
+                    <div class="footer-item">Données et confidentialité</div>
+                </div>
+
+                <div class="footer-group">
+                    <div class="footer-title">Nos hébergements</div>
+                    <div class="footer-item">Charte qualité</div>
+                    <div class="footer-item">Proposer votre hôtel</div>
+                </div>
+
+                <div class="footer-group">
+                    <div class="footer-title">Assistance</div>
+                    <div class="footer-item">Centre d'aide</div>
+                    <div class="footer-item">Nous contacter</div>
+                </div>
             </div>
         </footer>
     </div>

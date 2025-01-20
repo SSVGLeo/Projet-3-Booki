@@ -68,13 +68,32 @@ nav {
     max-height: 49px;
 }
 
-nav div {
+.header-ha {
     display: flex;
+    box-sizing: border-box;
+    max-width: 344px;
+    width: 100%;
+    max-height: 49px;
+    height: 100%;
+    padding-right: 50px;
+    padding-left: 0px;
+}
+.header-ha #activites {
+    display: flex;
+    justify-content: center;
+    margin: 0px 30px;
 }
 
-nav div a {
-    margin-left: 60px;
+.header-ha div {
+    width: 50%;
 }
+
+.header-ha #hebergements {
+    display: flex;
+    justify-content: center;
+    margin-right: 39px;
+}
+
 
 /* Pour styliser la premiere partie */
 
@@ -101,25 +120,26 @@ nav div a {
 
 /* Le code pour styliser le formulaire */
 
-main form p {
+form p {
     margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-main form{
+form{
     display: flex;
     margin-bottom: 35px;
     height: 49px;
-    width: 377px;
+    width: 28%;
+    min-width: 377px;
 }
 
 main #ville::placeholder {
     font-size: 1.1rem;
 }
 
-main form i{
+form i{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -285,6 +305,7 @@ main #ville {
 
 /****** Hebergements ***********/
 .hebergements {
+    order: 1;
     width: 65%;
     display: flex;
     flex-direction: column;
@@ -363,6 +384,7 @@ main #ville {
 
 /****** Populaires ***********/
 .populaires {
+    order: 2;
     width: 32%;
 }
 
@@ -475,10 +497,13 @@ footer {
 .footer-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(4, 1fr);
     background-color: var(--main-bg-color);
     padding: 20px 0px 20px 20px;
     gap: 15px;
+}
+
+.footer-group {
+    display: contents;
 }
 
 .footer-title {
@@ -509,6 +534,15 @@ footer {
 
     nav div #hebergements {
         margin: 0px 34px 0px 50px;
+    }
+
+    .header-ha {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .header-ha div {
+        justify-content: center;
     }
 
     /* Hebergement 1440px */
@@ -775,103 +809,147 @@ footer {
 /* Small devices (phones, less than 768px) */
 @media (max-width: 768px) {
 
+    main {
+        padding: 0px;
+    }
+
     /* Le code pour le header */
+
+    header {
+        display: flex;
+        flex-grow: inherit;
+        width: 100%;
+        height: 100%;
+        max-height: 115px;
+        padding: 0px;
+        margin-bottom: 15px;
+    }
 
     nav {
         display: grid;
         justify-content: center;
+        align-items: center;
         grid-template-columns: repeat(2, 50%);
         grid-template-rows: repeat(2, 50%);
-        height: 130px;
+        max-height: 115px;
+        height: 100%;
         width: 100%;
+        max-width: 768px;
     }
 
-    nav div {
-        justify-content: space-around;
-        text-align: center;
+    .header-logo {
+        grid-column: span 2;
+        justify-content: center;
+        width: 100%;
+        max-width: 768px;
+        height: 100%;
+        max-height: 19px;
+        margin: 30px 0px;
+    }
+
+    .header-ha {
+        justify-content: center;
         grid-column: span 2;
         height: 100%;
+        max-height: 36px;
+        width: 100%;
+        max-width: 768px;
+        padding: 0px;
     }
 
-    nav div a {
+    .header-ha div {
         margin: 0px;
-        width: 50%;
-        height: 50px;
+        padding-bottom: 15px;
     }
 
-    nav div p {
-        margin-bottom: 0px;
+    .header-ha p {
+        margin: 0px;
     }
 
-    .header-lien {
+    .header-ha div {
         border-bottom: #F2F2F2 solid 2px;
     }
 
-    .header-lien:hover {
+    .header-ha div:hover {
         color: var(--main-color);
         border-top: none;
         border-bottom: #0065FC solid 2px;
     }
 
-    header img {
-        margin: 20px 0px 0px 0px;
-        height: 1.5rem;
-        width: 5rem;
+    .header-lien:hover {
+        border: 0px solid white;
     }
 
-    .head-logo {
-        grid-column: span 2;
-        justify-self: center;
-    }
-
-    .head-lien {
-        justify-content: center;
-    }
-
-    header {
-        width: 100%;
-        height: auto;
+    header img, .header-logo .head-logo {
+        margin: 0px;
+        height: 19px;
+        width: 61.09px;
     }
 
     .main-container {
         padding: 0px;
     }
 
+    /* Info group */
+
+    .info-group {
+        margin-top: 15px;
+        margin-bottom: 35px;
+        height: 100%;
+        width: 100%;
+        max-height: 432px;
+        max-width: 768px;
+    }
+
     /* Le code pour le texte d'intro */
 
     .main-text {
-        padding-left: 20px;
-        margin-top: 15px;
-        margin-bottom: 30px;
+        margin: 0px 20px;
+        margin-bottom: 35px;
+        max-height: 79px;
+        width: 89.3%;
+        height: 100%;
     }
 
     .main-text h1 {
-        font-size:  1.6em;
-        width: 80vw;
+        font-size:  1.4em;
     }
 
     .main-text p {
-        font-size: 1.1em;
+        font-size: 1em;
     }
 
     /* Le code pour le formulaire */
 
-    .form-height {
-        margin-bottom: 0px;
-        padding-left: 20px;
+    .formulaire {
+        display: flex;
+        width: 89.3%;
+        height: 49px;
+        margin: 35px 20px;
     }
 
     form {
-        width: 430px;
+        width: 100%;
+        min-width: 0px;
+        height: 100%;
+        max-height: 49px;
+        margin: 0px;
+    }
+
+    .pointeur {
+        max-width: 50px;
+        min-width: 49px;
+        width: 15%;
     }
 
     main #ville {
-        width: 70%;
-        padding-left: 20px;
+        width: 80%;
+        padding: 0px;
     }
 
-    main #ville ::placeholder {
+    main #ville::placeholder {
         text-align: left;
+        padding-left: 10%;
     }
 
     .rechercher p {
@@ -880,14 +958,15 @@ footer {
 
     .rechercher {
         position: absolute;
-        right: 40px;
+        right: 15%;
         font-size: 1em;
-        width: 14%;
+        width: 15%;
+        max-width: 50px;
+        min-width: 49px;
+        height: 100%;
+        max-height: 50px;
         border-radius: 20px;
-    }
-
-    .form-height input {
-        width: 80%;
+        box-shadow: black 0px 0px 0px 0px;
     }
 
     .loupe {
@@ -895,5 +974,125 @@ footer {
         justify-content: center;
         align-items: center;
         color: var(--main-bg-color);
+    }
+
+    /* Code pour les filtres */
+
+    .filter-cards {
+        margin: 0px 20px 35px 20px;
+        width: 89.3%;
+        height: 100%;
+        max-height: 161px;
+    }
+
+    .filter-title {
+        margin: 0px;
+        height: 21px;
+        font-size: 1rem;
+    }
+
+    .filter-group {
+        flex-wrap: wrap;
+    }
+
+    .filter-card {
+        width: 45%;
+        height: 100%;
+        max-height: 46px;
+        margin: 0px;
+    }
+
+    .fc1, .fc3 {
+        margin-right: 10px;
+    }
+
+    .fc1, .fc2 {
+        margin-bottom: 20px;
+    }
+
+    /* Code pour les infos sur la ville */
+
+    .info-ville {
+        margin: 0px 20px;
+        width: 89.3%;
+        height: 100%;
+        max-height: 38px;
+    }
+
+    .info-ville i {
+        height: 24px;
+        width: 24px;
+    }
+
+    .info-ville p {
+        width: 90%;
+        height: 100%;
+        max-height: 38px;
+    }
+
+    /* Hergements and populaires modifications */
+
+    .hebergements-and-populaires {
+        flex-wrap: nowrap;
+        height: 100%;
+        max-height: 2020px;
+    }
+
+    /* Code pour les populaires */
+
+    .populaires {
+        order: 1;
+        width: 100%;
+        padding: 30px 20px;
+        height: 100%;
+        max-height: 569px;
+        margin-top: 0px;
+        margin-bottom: 15px;
+    }
+
+    .populaires-cards {
+        flex-direction: column;
+    }
+
+    /* Code pour les hebergements */
+
+    .hebergements {
+        order: 2;
+        width: 100%;
+        height: 100%;
+        max-height: 1435px;
+    }
+
+    /* Code pour les activites */
+
+    .activites-cards {
+        flex-direction: column;
+        height: 100%;
+        max-height: 845px;
+    }
+
+    /* Code pour le footer */
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 8px;
+    }
+
+    .footer-group {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 8px;
+    }
+}
+
+@media (max-width: 650px) {
+    .rechercher {
+        right: 6%;
+    }
+}
+
+@media (max-width: 375px) {
+    .rechercher {
+        right : 5%
     }
 }
