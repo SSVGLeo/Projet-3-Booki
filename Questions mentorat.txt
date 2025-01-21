@@ -1,0 +1,1 @@
+BUG FIREFOX prise en compte différente du margin dans la partie hébérgement en 375px
