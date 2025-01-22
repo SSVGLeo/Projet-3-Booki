@@ -1,1 +1,11 @@
 BUG FIREFOX prise en compte différente du margin dans la partie hébérgement en 375px
+
+Loupe : pas de position absolute et right 15% puis ajout margin left -12px
+
+Filtres : max-width dégage
+
+filter grousp : jsutify-content
+
+info group : max-heigth dégage
+
+Corriger la partie activités sur firefox
