@@ -41,7 +41,7 @@ input::placeholder {
 
 .main-container {
     width: 100%;
-    max-width: 1540px;
+    max-width: 1440px;
     padding: 0 50px;
     box-sizing: border-box;
 }
@@ -95,13 +95,6 @@ input::placeholder {
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
-
-/* Desktop normal >=1440px */
-@media (max-width: 1440px) {
-    .main-container {
-        padding: 0px;
-    }
-}
 
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1023px) {

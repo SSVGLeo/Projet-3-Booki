@@ -78,61 +78,6 @@
     font-size: 1.15rem;
 }
 
-@media (max-width: 1440px) {
-    /* Hebergement 1440px */
-    .card-rating {
-        display: flex;
-        align-items: center;
-        height: 13.5px;
-    }
-
-    .hebergement-cards {
-        display: flex;
-        justify-content: flex-start;
-        gap: 30px;
-    }
-
-    .hc2 {
-        margin-top: 30px;
-    }
-
-    .hebergements h1 {
-        font-size: 1.4rem;
-    }
-
-    .hebergement-cards .card-content {
-        margin-top: 8px;
-        margin-bottom: 0px;
-        padding-bottom: 10px;
-    }
-
-    .card-content p{
-        font-size: 0.85rem;
-    }
-
-    .hebergements a, .hebergements .card {
-        max-height: 207.25px;
-        max-width: 250.33px;
-        width: 105%;
-        margin: 0px;
-        box-sizing: border-box;
-        flex-shrink: 1;
-    }
-
-    .hebergements-cards img {
-        max-height: 124px;
-        max-height: 250px;
-    }
-
-    .hebergements .card-content h3 {
-        margin: 0px
-    }
-
-    .hebergements-pad {
-        margin-top: 30px;
-        margin-bottom: 2.5px;
-    }
-}
 
 @media (max-width: 1023px) {
     .hebergements {

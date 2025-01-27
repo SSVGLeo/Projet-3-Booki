@@ -58,53 +58,6 @@
     font-size: 1rem;
 }
 
-@media (max-width: 1440px) {
-    /* Activites 1440px */
-    .activites {
-        width: 100%;
-        padding: 0px;
-        height: 559px;
-        margin: 35px 0px;
-    }
-
-    .activites h1 {
-        font-size: 1.6rem;
-        margin: 30px 0px;
-    }
-
-    .activites h3 {
-        font-size: 16px;
-        padding: 0px
-    }
-
-    .activites-cards {
-        padding: 0px 30px;
-        height: 100%;
-        max-height: 439px;
-        width: 100%;
-        box-sizing: border-box;
-    }
-
-    .activites-cards .card {
-        height: 100%;
-        max-height: 459px;
-        width: 100%;
-        max-width: 297.5px;
-    }
-
-    .activites-cards .card-content {
-        display: flex;
-        align-items: center;
-        height: 59px;
-        margin: 20px 19px;
-        padding: 0px;
-    }
-
-    .activites-cards img {
-        height: 380px;
-    }
-}
-
 @media (max-width: 1023px) {
     .activites, .activites section {
         height: 100%;

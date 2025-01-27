@@ -23,19 +23,6 @@ footer {
     font-weight: bold;
 }
 
-@media (max-width: 1440px) {
-    /* footer 1440px */
-    .containerfoot {
-        margin-top: 0px;
-    }
-}
-
-    footer {
-        height: 100%;
-        max-height: 163px;
-        margin: 0px 50px;
-}
-
 @media (max-width: 767px) {
     /* Code pour le footer */
 

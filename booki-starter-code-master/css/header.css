@@ -49,32 +49,6 @@ nav {
     margin-right: 39px;
 }
 
-@media (max-width: 1440px) {
-    nav div {
-        display: flex;
-        justify-content: space-between;
-        width: 344px;
-        max-height: 35px;   
-    }
-
-    nav div #activites {
-        margin: 0px 50px 0px 34px;
-    }
-
-    nav div #hebergements {
-        margin: 0px 34px 0px 50px;
-    }
-
-    .header-ha {
-        padding-left: 0px;
-        padding-right: 0px;
-    }
-
-    .header-ha div {
-        justify-content: center;
-    }
-}
-
 @media (max-width: 767px) {
     /* Le code pour le header */
 
